@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.8.5 on darwin)" generated="20211213 17:29:09.386" rpa="false" schemaversion="2">
+<suite id="s1" name="Tests" source="/Users/gavin/Desktop/SeleniumIDERobotFrameworkPrac/tests">
+<suite id="s1-s1" name="Valid Login" source="/Users/gavin/Desktop/SeleniumIDERobotFrameworkPrac/tests/valid_login.robot">
+<test id="s1-s1-t1" name="Valid Login">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.saucedemo.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211213 17:29:09.520" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<status status="PASS" starttime="20211213 17:29:09.520" endtime="20211213 17:29:14.136"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211213 17:29:14.138" endtime="20211213 17:29:14.315"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20211213 17:29:14.315" endtime="20211213 17:29:14.316"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>login-button</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20211213 17:29:16.378" level="INFO">Current page contains element 'login-button'.</msg>
+<status status="PASS" starttime="20211213 17:29:14.316" endtime="20211213 17:29:16.379"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>user-name</arg>
+<arg>standard_user</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211213 17:29:16.379" level="INFO">Typing text 'standard_user' into text field 'user-name'.</msg>
+<status status="PASS" starttime="20211213 17:29:16.379" endtime="20211213 17:29:22.762"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>password</arg>
+<arg>secret_sauce</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20211213 17:29:22.764" level="INFO">Typing password into text field 'password'.</msg>
+<msg timestamp="20211213 17:29:26.843" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20211213 17:29:28.984" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20211213 17:29:22.763" endtime="20211213 17:29:28.985"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211213 17:29:28.986" level="INFO">Clicking button 'login-button'.</msg>
+<status status="PASS" starttime="20211213 17:29:28.986" endtime="20211213 17:29:35.656"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>class:title</arg>
+<arg>PRODUCTS</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20211213 17:29:35.658" level="INFO">Verifying element 'class:title' contains exact text 'PRODUCTS'.</msg>
+<status status="PASS" starttime="20211213 17:29:35.657" endtime="20211213 17:29:39.726"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211213 17:29:39.729" endtime="20211213 17:29:41.804"/>
+</kw>
+<status status="PASS" starttime="20211213 17:29:09.519" endtime="20211213 17:29:41.805"/>
+</test>
+<doc>A test suite with a single test for valid login
+
+jfhfhfhf
+hsdfhdhfh</doc>
+<status status="PASS" starttime="20211213 17:29:09.399" endtime="20211213 17:29:41.807"/>
+</suite>
+<status status="PASS" starttime="20211213 17:29:09.387" endtime="20211213 17:29:41.808"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Valid Login">Tests.Valid Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
